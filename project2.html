@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Awesome!</title>
+    <link href='project2.css' rel='stylesheet'/>
+  </head>
+  <body>
+
+    <div class='header'>
+            <div class='logo'><a href="project.html"><img src='images/awesome-logo.svg'/></a></div>
+
+      <ul class='menu'>
+        <li><a href='#'>About</a></li>          <!-- These are the same -->
+        <li><a href='#'>Pricing</a></li>
+         <li>
+             <button><a href="project1.html" target="_blank">Sign Up</a></button>
+            </li> 
+            <li>
+                    <button><a href="project2.html" target="_blank">Login</a></button>
+                   </li>
+                </ul>          
+            </div>
+            <script>
+            function f1(){
+              var obj={
+                name:document.getElementById("email").value
+              };
+              alert("email "+obj.name);
+            }</script>
+    <form>
+        <fieldset>
+        <input type="email" placeholder="email" id="email"><br><br>
+        <input type="password" placeholder="password"><br><br>
+        <input type="submit" value="Login" onclick="f1()">
+        </fieldset>
+    </form>
+
+</body>
+</html>
